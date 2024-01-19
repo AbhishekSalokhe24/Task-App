@@ -3,13 +3,14 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 body{
-    background-color: #F1F6F9;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);    
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40rem;
 }
 .card{
     width: 25rem;
@@ -17,8 +18,10 @@ body{
     justify-content: center;
     flex-direction: column;
     background-color: #FBF9F1;
-    border: 1px solid #212A3E;
+    border: 2px solid #212A3E;
     border-radius: 10px;
+    margin: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .card .date{
     height: 6.5rem;
@@ -27,8 +30,8 @@ body{
     flex-direction: column;
     align-items: center;
     background-color: #212A3E;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
 }
 .card .date h2{
     color: #fff;
@@ -54,14 +57,18 @@ body{
 
 .task-list ul li{
     width: 21rem;
-    padding: 10px;
+    padding: 5px;
     border: 1px solid #ccc;
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
+.task-list p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 1rem;
+}
 .input-text{
     height: 3.5rem;
     display: flex;
@@ -113,9 +120,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
     font-size: 1rem;
-    margin: 1rem;
+    margin: .9rem;
     background-color: #212A3E;
     border: transparent;
     color: #fff;
