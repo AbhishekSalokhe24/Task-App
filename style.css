@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-color: #F1F6F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40rem;
+}
+.card{
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #FBF9F1;
+    border: 1px solid #212A3E;
+    border-radius: 10px;
+}
+.card .date{
+    height: 6.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #212A3E;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.card .date h2{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.card .date h4{
+    color: #fff;
+    font-weight: 300;
+    margin-top: 8px;
+} 
+.task-list{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
+.task-list ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.task-list ul li{
+    width: 21rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-text{
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    /* background-color: #52D3D8; */
+    border-radius: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.input-text input{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    width: 70%;
+    padding: 10px;
+    margin: 2px;
+    border: transparent;
+    border-bottom: 2px solid #212A3E;
+    background-color: #EEF5FF;
+}
+.input-text button{
+    width: 30%;
+    padding: 10px;
+    margin: 2px;
+    background-color: #212A3E;
+    color: #fff;
+    font-size: 1rem;
+    border: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.input-text button:hover, .clear-all-btn:hover{
+    background-color: #fff;
+    color: #212A3E;
+    border: 1px solid #212A3E;
+}
+.task-list ul li i{
+    color: #212A3E;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.task-list ul li i:hover{
+    color: #fff;
+    background-color: black;
+    border-radius: 50%;
+}
+.clear-all-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    font-size: 1rem;
+    margin: 1rem;
+    background-color: #212A3E;
+    border: transparent;
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #212A3E;
+}
+.clear-all-btn i{
+    margin-right: 10px;
+}
