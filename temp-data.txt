@@ -1,0 +1,33 @@
+//selecting input value
+let inputTask = document.querySelector("#input-tsk");
+
+//selecting Enter Task Btn
+let enterTaskBtn = document.querySelector("#input-btn");
+
+// selecting ul
+let taskList = document.querySelector(".task-display .task-list");
+
+// selecting pending task p
+let pendingTsk = document.querySelector(".task-count");
+
+let pCount = 0;
+
+enterTaskBtn.addEventListener("click",()=>{
+
+    let task = inputTask.value;
+    console.log(task);
+    let newTask = ` <li>
+                         <input type="checkbox" name="" id="clear-task" onclick = "doneTask(this)">
+                         <p>${task}</p>
+                     </li>`;
+
+    taskList.insertAdjacentHTML("afterbegin",newTask);
+    pCount++;
+    
+    pendingTsk.innerHTML = `Total Pending Tasks : ${pCount}`;
+});
+
+function doneTask(){
+    document.querySelector(".task-list li p").classList.toggle("clear");
+    pendingTsk.innerHTML = `Total Pending Tasks : ${pCount-1}`;
+};
