@@ -155,4 +155,7 @@ h1 {
     .task-list ul li {
         width: 90%;
     }
+    .task-list p {
+        font-size: 10px;
+    }
 }
