@@ -31,6 +31,7 @@ addTskBtn.addEventListener("click",()=>{
         count++;
         let decide = count <= 0 ? 'add' : 'remove';
         mainClrBtn.classList[decide]("remove-btn");
+        
 
         inputTask.value = "";
         inputTask.placeholder = 'Enter new task here';
