@@ -12,13 +12,18 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: opacity 0.5s ease-in-out;
 }
-h1{
+h1 {
+    font-size: 20px;
     margin: 2rem 1rem 2rem 1rem;
-
+    background-color: #212A3E;
+    color: #fff;
+    padding: 1rem 6rem 1rem 6rem;
+    border-radius: 10px;
 }
 .card {
-    width: 84%;
+    width: 25rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -138,4 +143,16 @@ h1{
 }
 .clear-all-btn i{
     margin-right: 10px;
+}
+.remove-btn{
+    display: none;
+}
+@media only screen and (max-width: 767px) {
+    .card {
+        margin: 1rem 2rem 2rem 2rem;
+        width: 85%;
+    }
+    .task-list ul li {
+        width: 90%;
+    }
 }
