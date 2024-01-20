@@ -31,3 +31,22 @@ function doneTask(){
     document.querySelector(".task-list li p").classList.toggle("clear");
     pendingTsk.innerHTML = `Total Pending Tasks : ${pCount-1}`;
 };
+
+
+
+
+ <!-- <li>
+                    <p>Get some fruits from Market</p>
+                    <i class="fa-solid fa-circle-check" id="clr-btn"></i>
+                </li>
+                <li>
+                    <p>Buy some bread</p>
+                    <i class="fa-solid fa-circle-check" id="clr-btn"></i>
+                </li>
+                <li>
+                    <p>Send email to Jonh Deo</p>
+                    <i class="fa-solid fa-circle-check"></i>
+                </li><li>
+                    <p>Make a call to HR</p>
+                    <i class="fa-solid fa-circle-check" id="clr-btn"></i>
+                </li> -->

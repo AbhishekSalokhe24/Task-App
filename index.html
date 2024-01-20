@@ -8,34 +8,20 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-
+    
+    <h1>Task App</h1>
     <div class="card">
         <div class="date">
-            <h2>Friday, Jaunary 19 2024</h2>
-            <h4>4 Task Pending</h4>
+            <h2 id="current-date"></h2>
+            <h4 id="task-pending"></h4>
         </div>
         <div class="task-list">
             <div class="input-text">
-                <input type="text" name="" id="#input-task" placeholder="Enter Task Here">
+                <input type="text" id="input-task" placeholder="Enter Task Here">
                 <button id="add-btn">Add task</button>
             </div>
-            <ul>
-                <li>
-                    <p>Get some fruits from Market</p>
-                    <i class="fa-solid fa-circle-check" id="clr-btn"></i>
-                </li>
-                <li>
-                    <p>Buy some bread</p>
-                    <i class="fa-solid fa-circle-check" id="clr-btn"></i>
-                </li>
-                <li>
-                    <p>Send email to Jonh Deo</p>
-                    <!-- <i class="fa-solid fa-circle" id="clr-btn"></i> -->
-                    <i class="fa-solid fa-circle-check"></i>
-                </li><li>
-                    <p>Make a call to HR</p>
-                    <i class="fa-solid fa-circle-check" id="clr-btn"></i>
-                </li>
+            <ul class="list-task">
+               
             </ul>
             <button class="clear-all-btn"><i class="fa-solid fa-trash"></i><p>Clear All Tasks</p></button>
         </div>
@@ -43,5 +29,5 @@
     </div>
 
 </body>
-<!-- <script src="/script.js"></script> -->
+<script src="/script.js"></script>
 </html>

@@ -11,16 +11,21 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
-.card{
-    width: 25rem;
+h1{
+    margin: 2rem 1rem 2rem 1rem;
+
+}
+.card {
+    width: 84%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     background-color: #FBF9F1;
     border: 2px solid #212A3E;
     border-radius: 10px;
-    margin: 2rem;
+    margin: 3rem;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
 }
 .card .date{
@@ -36,6 +41,7 @@ body{
 .card .date h2{
     color: #fff;
     font-size: 1.2rem;
+    font-weight: 400;
 }
 .card .date h4{
     color: #fff;
@@ -89,13 +95,13 @@ body{
     border-bottom: 2px solid #212A3E;
     background-color: #EEF5FF;
 }
-.input-text button{
+.input-text button {
     width: 30%;
     padding: 10px;
     margin: 2px;
     background-color: #212A3E;
     color: #fff;
-    font-size: 1rem;
+    font-size: 13px;
     border: transparent;
     cursor: pointer;
     border-radius: 10px;
